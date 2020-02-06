@@ -56,7 +56,6 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(46, 17);
             this.name.TabIndex = 1;
-            this.name.Text = "label2";
             // 
             // bithdayYearLabel
             // 
@@ -74,7 +73,6 @@
             this.birthdayYear.Name = "birthdayYear";
             this.birthdayYear.Size = new System.Drawing.Size(46, 17);
             this.birthdayYear.TabIndex = 3;
-            this.birthdayYear.Text = "label4";
             // 
             // sexLabel
             // 
@@ -92,7 +90,6 @@
             this.sex.Name = "sex";
             this.sex.Size = new System.Drawing.Size(46, 17);
             this.sex.TabIndex = 5;
-            this.sex.Text = "label6";
             // 
             // mariageLabel
             // 
@@ -110,7 +107,6 @@
             this.mariage.Name = "mariage";
             this.mariage.Size = new System.Drawing.Size(46, 17);
             this.mariage.TabIndex = 7;
-            this.mariage.Text = "label8";
             // 
             // cityLabel
             // 
@@ -128,7 +124,6 @@
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(54, 17);
             this.city.TabIndex = 9;
-            this.city.Text = "label10";
             // 
             // ResultForm
             // 

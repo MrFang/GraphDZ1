@@ -5,8 +5,33 @@ namespace GraphDZ1
 {
     public partial class Form1 : Form {
         private Form resultForm;
+        private string[] cities;
+        private int currentYear;
+
         public Form1() {
             InitializeComponent();
+
+            cities = new string[] {
+                "Берлин",
+                "Рио",
+                "Токио",
+                "Москва",
+                "Денвер",
+                "Осло",
+                "Хельсинки",
+                "Найроби",
+            };
+            currentYear = System.DateTime.Now.Year;
+
+            SuspendLayout();
+            birthdayYear.Minimum = 1900;
+            birthdayYear.Maximum = currentYear;
+            birthdayYear.Value = 2000;
+
+            city.Items.AddRange(cities);
+            city.Text = cities[0];
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private void submit(object sender, EventArgs e) {
@@ -14,7 +39,7 @@ namespace GraphDZ1
                 resultForm = new ResultForm(
                     name.Text,
                     birthdayYear.Value,
-                    true,
+                    this.sexMale.Checked ? true : false,
                     mariage.Checked,
                     this.city.Text
                 );

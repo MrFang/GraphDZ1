@@ -39,18 +39,6 @@
             this.mariage = new System.Windows.Forms.CheckBox();
             this.cityLabel = new System.Windows.Forms.Label();
             this.city = new System.Windows.Forms.ComboBox();
-
-            this.cities = new string[] {
-                "Берлин",
-                "Рио",
-                "Токио",
-                "Москва",
-                "Денвер",
-                "Осло",
-                "Хельсинки",
-                "Найроби",
-            };
-            this.currentYear = System.DateTime.Now.Year;
             ((System.ComponentModel.ISupportInitialize)(this.birthdayYear)).BeginInit();
             this.sexRadioButtons.SuspendLayout();
             this.SuspendLayout();
@@ -92,24 +80,9 @@
             this.birthdayYear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.birthdayYear.Location = new System.Drawing.Point(160, 40);
-            this.birthdayYear.Maximum = new decimal(new int[] {
-            this.currentYear,
-            0,
-            0,
-            0});
-            this.birthdayYear.Minimum = new decimal(new int[] {
-            1900,
-            0,
-            0,
-            0});
             this.birthdayYear.Name = "birthdayYear";
             this.birthdayYear.Size = new System.Drawing.Size(130, 22);
             this.birthdayYear.TabIndex = 3;
-            this.birthdayYear.Value = new decimal(new int[] {
-            2000,
-            0,
-            0,
-            0});
             // 
             // birthdayYearLabel
             // 
@@ -186,12 +159,10 @@
             this.city.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.city.FormattingEnabled = true;
-            this.city.Items.AddRange(this.cities);
             this.city.Location = new System.Drawing.Point(107, 202);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(183, 24);
             this.city.TabIndex = 10;
-            this.city.Text = "Берлин";
             // 
             // Form1
             // 
@@ -233,9 +204,6 @@
         private System.Windows.Forms.CheckBox mariage;
         private System.Windows.Forms.Label cityLabel;
         private System.Windows.Forms.ComboBox city;
-
-        private string[] cities;
-        private int currentYear;
     }
 }
 
