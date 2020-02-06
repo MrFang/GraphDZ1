@@ -65,6 +65,7 @@
             this.submitButton.TabIndex = 0;
             this.submitButton.Text = "Готово";
             this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submit);
             // 
             // name
             // 

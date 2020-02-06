@@ -1,20 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GraphDZ1
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
+    public partial class Form1 : Form {
+        private Form resultForm;
+        public Form1() {
             InitializeComponent();
+        }
+
+        private void submit(object sender, EventArgs e) {
+            if (this.name.Text != "") {
+                resultForm = new ResultForm(
+                    name.Text,
+                    birthdayYear.Value,
+                    true,
+                    mariage.Checked,
+                    this.city.Text
+                );
+                resultForm.Show();
+            }
+            else {
+                MessageBox.Show("Incorrect name");
+            }
         }
     }
 }
