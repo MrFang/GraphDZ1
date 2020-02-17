@@ -35,13 +35,13 @@ namespace GraphDZ1
         }
 
         private void submit(object sender, EventArgs e) {
-            if (this.name.Text != "") {
+            if (name.Text != "") {
                 resultForm = new ResultForm(
                     name.Text,
                     birthdayYear.Value,
-                    this.sexMale.Checked ? true : false,
+                    sexMale.Checked,
                     mariage.Checked,
-                    this.city.Text
+                    city.Text
                 );
                 resultForm.Show();
             }
